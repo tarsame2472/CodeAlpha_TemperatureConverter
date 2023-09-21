@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url("https://media.wired.com/photos/5a669662e9d03b6481cb8adc/16:9/w_4000,h_2250,c_limit/Mann_Desert_final.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: none;
+}
+
+.container .navigation{
+    display: flex;
+    padding: .5%;
+}
+
+.container .navigation .box{
+    width: 11vw;
+    padding: .5%;
+    transition: all 1s ease-in-out;
+}
+.container .navigation .box:hover{
+    width: 11vw;
+    padding: .5%;
+    transform: scale(1.1);
+}
+
+.container .navigation .box .name a{
+    text-decoration: none;
+    color: rgb(121, 237, 255);
+    font-size: x-large;
+}
+
+.container .navigation .box p a img{
+    border-radius: 100px;
+    margin-left: 39px;
+    width: 4vw;
+    height: 7.5vh;
+}
+                                                       /* FORM */
+
+.container .body{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.container .body .form{
+    border: 2px solid rgb(121, 237, 255);
+    border-radius: 20px;
+    width: 40vw;
+    height: 50vh;
+    background-color: rgba(121, 237, 255, 0.162);
+}
+
+.container .body .form .heading{
+    margin: 1%;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 140%;
+    font-weight: bolder;
+    cursor: none;
+}
+
+                                                         /* ANIMATION STARTS*/
+.container .body{
+    animation: type 1.5s  ;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.container .body .form .heading h2{
+    animation: type 4s  ;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 140%;
+    font-weight: bolder;
+}
+.container .footer{
+    animation: type 1.5s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes type{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+                                                           /* ANIMATION END */
+
+.container .body .form .values{
+    margin: 7%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    height: 10vh;
+}
+
+.container .body .form .values .input{
+    width: 6vw;
+    height: 10%;
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+    border: none;
+    border-bottom: 5px solid black;
+    border-radius: 20%;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 2%;
+    margin-top: 4%;
+    transition: all .5s ease-in-out;
+}
+.container .body .form .values .input:hover{
+    transform: scale(1.1);
+}
+
+.container .body .form .values h1{
+    font-size: xxx-large;
+    color: rgba(0, 0, 0, 0.567);
+}
+.container .body .form .values h1:hover{ 
+    cursor: none;
+}
+
+.container .body .form .values #select{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+    border: 3px solid black;
+    border-radius: 20%;
+    height: 65%;
+    width: 6vw;
+    padding-left: 2%;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.container .body .form .values #select:hover{
+    transform: scale(1.1);
+}
+
+.container .body .form .values #to-select{
+    background-color: rgba(240, 255, 255, 0);
+    color: black;
+    border: 3px solid black;
+    border-radius: 20%;
+    height: 65%;
+    width: 6vw;
+    padding-left: 2%;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.container .body .form .values #to-select:hover{
+    transform: scale(1.1);
+}
+                                                                                  /* BUTTON */
+.container .body .form .button{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+}
+.container .body .form .button button{
+    background-color: rgba(0, 255, 255, 0);
+    border: 2px solid black;
+    border-radius: 18%;
+    padding: 2%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.container .body .form .button button:hover{
+    background-color: rgba(0, 255, 255, 0.329);
+    box-shadow: 2px 2px 2px black;
+    transform: scale(.9);
+}
+                                                                                   /* ANSWER */
+.container .body .form .answer{
+    margin: 3%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.container .body .form .answer p{
+    background-color: rgba(121, 237, 255, 0.267);
+}
+                                                        /* FOOTER */
+.container .footer{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 8.5%;
+    height: 6vh;
+    background-color: rgba(121, 237, 255, 0.267);
+    align-items: center;
+}
